@@ -61,17 +61,20 @@ def makemovie(p1,p2):
             p2.update(-grav.force)
             grav.update(p1,p2)
 
-pos1 = np.array([1.0,0.0,0.0])      
-pos2 = np.array([0.0,0.0,0.0])      
+if __name__=="__main__":
+    print("starting sim")
+    pos1 = np.array([1.0,0.0,0.0])      
+    pos2 = np.array([0.0,0.0,0.0])      
 
-vel1 = np.array([0.3,0.5,0.0])      
-vel2 = np.array([0.0,-0.5,0.0])      
+    vel1 = np.array([0.3,0.5,0.0])      
+    vel2 = np.array([0.0,-0.5,0.0])      
 
-p1 = Partical(pos1, vel1)
-p2 = Partical(pos2, vel2)
-grav = Force(p1,p2)
+    p1 = Partical(pos1, vel1)
+    p2 = Partical(pos2, vel2)
+    grav = Force(p1,p2)
 
-makemovie(p1,p2)
+    print("making movie")
+    makemovie(p1,p2)
 
 """
 for n in range(0,90):
