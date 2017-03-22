@@ -3,6 +3,7 @@ import matplotlib.pylab as plt
 import numpy as np
 import matplotlib.animation as ani
 
+
 class Force(object):
    def __init__(self,p1, p2):
       #self.force=np.array([0,0,0])
